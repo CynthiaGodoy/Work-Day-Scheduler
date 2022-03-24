@@ -2,7 +2,14 @@
 
 ## Project Description
 
-Starter code includes a fully completed [style.css] file along with partially completed [index.html] file. [Script.js] with [JQuery] will need to be started from Scratch and include [Moment.js] within. 
+Starter code includes a fully completed style.css file along with partially completed index.html file. The Script.js will need to be started from [Scratch] and include JQuery Moment.js within to create a functioning Work Day Scheduler.
+
+## What is Used
+    * Style.css
+    * index.html
+    * script.js
+    * JQuery
+    * Moment.js
 
 ## Main Objection
 
