@@ -62,6 +62,8 @@ textarea {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
+  padding-left: 40px; /* MADE BUTTONS LARGER BY ADDING PADDING (LEFT AND RIGHT) */
+  padding-right: 40px;
   color: white;
 }
 
