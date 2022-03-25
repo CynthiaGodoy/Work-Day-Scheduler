@@ -52,5 +52,44 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
         $("#task12PM").addClass("future");
     }
 
+    if (now > 13) { //1PM
+        $("#task13PM").addClass("past"); 
+    } else if (now <= 13 && now < 14) {
+        $("#task13PM").addclass("present"); 
+    } else if (now < 13) {
+        $("#task13PM").addClass("future");
+    }
+
+    if (now > 14) { //2PM
+        $("#task14PM").addClass("past"); 
+    } else if (now <= 14 && now < 15) {
+        $("#task14PM").addclass("present"); 
+    } else if (now < 14) {
+        $("#task14PM").addClass("future");
+    }
+
+    if (now > 15) { //3PM
+        $("#task15PM").addClass("past"); 
+    } else if (now <= 15 && now < 16) {
+        $("#task15PM").addclass("present"); 
+    } else if (now < 15) {
+        $("#task15PM").addClass("future");
+    }
+
+    if (now > 16) { //4PM
+        $("#task16PM").addClass("past"); 
+    } else if (now <= 16 && now < 17) {
+        $("#task16PM").addclass("present"); 
+    } else if (now < 16) {
+        $("#task16PM").addClass("future");
+    }
+
+    if (now > 17) { //5PM
+        $("#task17PM").addClass("past"); 
+    } else if (now <= 17 && now < 18) {
+        $("#task17PM").addclass("present"); 
+    } else if (now < 17) {
+        $("#task17PM").addClass("future");
+    }
 
 }
