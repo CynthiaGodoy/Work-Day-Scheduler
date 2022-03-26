@@ -53,43 +53,187 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     }
 
     if (now > 13) { //1PM
-        $("#task13PM").addClass("past"); 
+        $("#task1PM").addClass("past"); 
     } else if (now <= 13 && now < 14) {
-        $("#task13PM").addclass("present"); 
+        $("#task1PM").addclass("present"); 
     } else if (now < 13) {
-        $("#task13PM").addClass("future");
+        $("#task1PM").addClass("future");
     }
 
     if (now > 14) { //2PM
-        $("#task14PM").addClass("past"); 
+        $("#task2PM").addClass("past"); 
     } else if (now <= 14 && now < 15) {
-        $("#task14PM").addclass("present"); 
+        $("#task2PM").addclass("present"); 
     } else if (now < 14) {
-        $("#task14PM").addClass("future");
+        $("#task2PM").addClass("future");
     }
 
     if (now > 15) { //3PM
-        $("#task15PM").addClass("past"); 
+        $("#task3PM").addClass("past"); 
     } else if (now <= 15 && now < 16) {
-        $("#task15PM").addclass("present"); 
+        $("#task3PM").addclass("present"); 
     } else if (now < 15) {
-        $("#task15PM").addClass("future");
+        $("#task3PM").addClass("future");
     }
 
     if (now > 16) { //4PM
-        $("#task16PM").addClass("past"); 
+        $("#task4PM").addClass("past"); 
     } else if (now <= 16 && now < 17) {
-        $("#task16PM").addclass("present"); 
+        $("#task4PM").addclass("present"); 
     } else if (now < 16) {
-        $("#task16PM").addClass("future");
+        $("#task4PM").addClass("future");
     }
 
     if (now > 17) { //5PM
-        $("#task17PM").addClass("past"); 
+        $("#task5PM").addClass("past"); 
     } else if (now <= 17 && now < 18) {
-        $("#task17PM").addclass("present"); 
+        $("#task5PM").addclass("present"); 
     } else if (now < 17) {
-        $("#task17PM").addClass("future");
+        $("#task5PM").addClass("future");
+    }
+}
+
+function nineAM() {
+var inputTextarea = document.querySelector("#task9AM");
+var outputDiv = document.querySelector("#task9AM");
+var saveButton = document.querySelector("#button9AM");
+
+saveButton.addEventListener("click", updateOutput);
+
+outputDiv.textContent = localStorage.getItem("content");
+inputTextarea.value =localStorage.getItem("content");
+
+function updateOutput () {
+    localStorage.setItem("content", inputTextarea.value)
+
+    outputDiv.textContent = inputTextarea.value;
+}
+}
+
+function tenAM() {
+    var inputTextarea = document.querySelector("#task10AM");
+    var outputDiv2 = document.querySelector("#task10AM");
+    var saveButton = document.querySelector("#button10AM");
+    
+    saveButton.addEventListener("click", updateOutput);
+    
+    outputDiv2.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+    
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv2.textContent = inputTextarea.value;
+    }
     }
 
-}
+function elevenAM() {
+    var inputTextarea = document.querySelector("#task11AM");
+    var outputDiv3 = document.querySelector("#task11AM");
+    var saveButton = document.querySelector("#button11AM");
+
+    saveButton.addEventListener("click", updateOutput);
+    
+    outputDiv3.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv3.textContent = inputTextarea.value;
+    }
+    }
+
+function twelvePM() {
+    var inputTextarea = document.querySelector("#task12PM");
+    var outputDiv4 = document.querySelector("#task12PM");
+    var saveButton = document.querySelector("#button12PM");
+
+    saveButton.addEventListener("click", updateOutput);
+    
+    outputDiv4.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+    
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv4.textContent = inputTextarea.value;
+    }
+    }
+
+function onePM() {
+    var inputTextarea = document.querySelector("#task1PM");
+    var outputDiv5 = document.querySelector("#task1PM");
+    var saveButton = document.querySelector("#button1PM");
+    
+    saveButton.addEventListener("click", updateOutput);
+        
+    outputDiv5.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+        
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv5.textContent = inputTextarea.value;
+    }
+    }
+
+function twoPM() {
+    var inputTextarea = document.querySelector("#task2PM");
+    var outputDiv6 = document.querySelector("#task2PM");
+    var saveButton = document.querySelector("#button2PM");
+    
+    saveButton.addEventListener("click", updateOutput);
+    
+    outputDiv6.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+    
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv6.textContent = inputTextarea.value;
+    }
+    }
+
+function threePM() {
+    var inputTextarea = document.querySelector("#task3PM");
+    var outputDiv7 = document.querySelector("#task3PM");
+    var saveButton = document.querySelector("#button3PM");
+        
+    saveButton.addEventListener("click", updateOutput);
+        
+    outputDiv7.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+        
+    function updateOutput () {
+    localStorage.setItem("content", inputTextarea.value);
+    outputDiv7.textContent = inputTextarea.value;
+    }
+    }
+
+function fourPM() {
+    var inputTextarea = document.querySelector("#task4PM");
+    var outputDiv8 = document.querySelector("#task4PM");
+    var saveButton = document.querySelector("#button4PM");
+                
+    saveButton.addEventListener("click", updateOutput);
+                
+    outputDiv8.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+                
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv8.textContent = inputTextarea.value;
+    }
+    }
+
+function fivePM() {
+    var inputTextarea = document.querySelector("#task5PM");
+    var outputDiv9 = document.querySelector("#task5PM");
+    var saveButton = document.querySelector("#button5PM");
+    
+    saveButton.addEventListener("click", updateOutput);
+    
+    outputDiv9.textContent = localStorage.getItem("content")
+    inputTextarea.value =localStorage.getItem("content");
+    
+    function updateOutput () {
+        localStorage.setItem("content", inputTextarea.value);
+        outputDiv9.textContent = inputTextarea.value;
+    }
+    }
