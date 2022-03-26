@@ -23,7 +23,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 9) { //9AM
         $("#task9am").addClass("past"); //BEFORE CURRENT HOUR IS THE PAST
     } else if (now >= 9 && now < 10) {
-        $("#task9am").addclass("present"); //AT CURRENT HOUR IS PRESENT
+        $("#task9am").addClass("present"); //AT CURRENT HOUR IS PRESENT
     } else if (now < 9) {
         $("#task9am").addClass("future"); //AFTER CURRENT HOUR IS FUTURE
     }
@@ -31,7 +31,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 10) { //10AM
         $("#task10am").addClass("past"); 
     } else if (now >= 10 && now < 11) {
-        $("#task10am").addclass("present"); 
+        $("#task10am").addClass("present"); 
     } else if (now < 10) {
         $("#task10am").addClass("future");
     }
@@ -39,7 +39,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 11) { //11AM
         $("#task11am").addClass("past"); 
     } else if (now >= 11 && now < 12) {
-        $("#task11am").addclass("present"); 
+        $("#task11am").addClass("present"); 
     } else if (now < 11) {
         $("#task11am").addClass("future");
     }
@@ -47,7 +47,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 12) { //12PM
         $("#task12pm").addClass("past"); 
     } else if (now >= 12 && now < 13) {
-        $("#task12pm").addclass("present"); 
+        $("#task12pm").addClass("present"); 
     } else if (now < 12) {
         $("#task12pm").addClass("future");
     }
@@ -55,7 +55,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 13) { //1PM
         $("#task1pm").addClass("past"); 
     } else if (now >= 13 && now < 14) {
-        $("#task1pm").addclass("present"); 
+        $("#task1pm").addClass("present"); 
     } else if (now < 13) {
         $("#task1pm").addClass("future");
     }
@@ -63,7 +63,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 14) { //2PM
         $("#task2pm").addClass("past"); 
     } else if (now >= 14 && now < 15) {
-        $("#task2pm").addclass("present"); 
+        $("#task2pm").addClass("present"); 
     } else if (now < 14) {
         $("#task2pm").addClass("future");
     }
@@ -71,7 +71,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 15) { //3PM
         $("#task3pm").addClass("past"); 
     } else if (now >= 15 && now < 16) {
-        $("#task3pm").addclass("present"); 
+        $("#task3pm").addClass("present"); 
     } else if (now < 15) {
         $("#task3pm").addClass("future");
     }
@@ -79,7 +79,7 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 16) { //4PM
         $("#task4pm").addClass("past"); 
     } else if (now >= 16 && now < 17) {
-        $("#task4pm").addclass("present"); 
+        $("#task4pm").addClass("present"); 
     } else if (now < 16) {
         $("#task4pm").addClass("future");
     }
@@ -87,13 +87,13 @@ function colorCode() { // PAST, PRESENT, FUTURE COLOR CODING SCRIPT
     if (now > 17) { //5PM
         $("#task5pm").addClass("past"); 
     } else if (now >= 17 && now < 18) {
-        $("#task5pm").addclass("present"); 
+        $("#task5pm").addClass("present"); 
     } else if (now < 17) {
         $("#task5pm").addClass("future");
     }
 }
 
-function nineAM() {
+function nineAM() { //9AM
 var inputTextarea = document.querySelector("#task9am"); //SET VARIABLE INPUTTEXTAREA TO TASK9AM
 var outputDiv = document.querySelector("#task9am"); //SET VARIABLE OUTPUTDIV TO TASK9AM
 var saveButton = document.querySelector("#button9am"); //SET VARIABLE SAVEBUTTON TO BUTTON9AM
